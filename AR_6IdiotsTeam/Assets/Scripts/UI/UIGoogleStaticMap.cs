@@ -34,7 +34,7 @@ public class UIGoogleStaticMap : MonoBehaviour, InputActions.IUIActions
         Terrain,
     }
     private TextureStyle _textureStyle = TextureStyle.Roadmap;
-    private readonly string GOOGLE_MAP_API_KEY = "AIzaSyA9nKQa8ipA1HCbxCWrru-0QPDaeS5Cpbk";
+    private readonly string GOOGLE_MAP_API_KEY = "AIzaSyCRKHlpmFQ1SRnIX465zxw9gslA6T7UiM8";
     private RectTransform _rawImageRectTransform;
     private RawImage _rawImage;
     [SerializeField] private int _zoomLevel = 10;
@@ -63,7 +63,7 @@ public class UIGoogleStaticMap : MonoBehaviour, InputActions.IUIActions
 #endif
 
         Button zoomIn = transform.Find("Map/Button - Up").GetComponent<Button>();
-        Button zoomOut = transform.Find("Map/Button - Dawn").GetComponent<Button>();
+        Button zoomOut = transform.Find("Map/Button - Down").GetComponent<Button>();
         Button exit = transform.Find("Map/Button - Exit").GetComponent<Button>();
         zoomIn.onClick.AddListener(() => zoomLevel++);
         zoomOut.onClick.AddListener(() => zoomLevel--);

@@ -9,7 +9,7 @@ public class PlaceSearch : MonoBehaviour
 {
     private Button _search;
     private InputField _searchField;
-    public string apiKey = "AIzaSyA9nKQa8ipA1HCbxCWrru-0QPDaeS5Cpbk";
+    public string apiKey = "AIzaSyCRKHlpmFQ1SRnIX465zxw9gslA6T7UiM8";
     public string apiUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?";
 
     private void Awake()
